@@ -1,3 +1,5 @@
+import grades.Student;
+
 public class JavaTester {
     public static void main(String[] args) {
         Student student = new Student("bob");

@@ -1,3 +1,5 @@
+package grades;
+
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -51,13 +53,13 @@ public class GradesApplication {
                 if (userChoice.equals(key)) {
                     Student student = students.get(key);
                     System.out.println("Username: " + key);
-                    System.out.println("Student name: " + student.getName());
+                    System.out.println("grades.Student name: " + student.getName());
                     System.out.println("Grade average: " + student.getGradeAverage());
                     studentFound = true;
                 }
             }
             if (!studentFound) {
-                System.out.println("Student not found.");
+                System.out.println("grades.Student not found.");
             }
             System.out.println("Would you like to view another student? (y/n)");
             userResponse = scanner.next();
